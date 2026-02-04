@@ -3,7 +3,7 @@
 - **Autor**: Carlos David Barrero Velasquez
 - **Universidad**: Escuela Colombiana de Ingeniería Julio Garavito
 - **Asignatura**: Arquitecturas Empresariales (AREP)
-- **Fecha**: Enero 2026
+- **Fecha**: Febrero 2026
 
 ## Introducción
 
