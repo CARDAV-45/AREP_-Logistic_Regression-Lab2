@@ -3,7 +3,7 @@
 - **Autor**: Carlos David Barrero Velasquez
 - **Universidad**: Escuela Colombiana de Ingeniería Julio Garavito
 - **Asignatura**: Arquitecturas Empresariales (AREP)
-- **Fecha**: Enero 2026
+- **Fecha**: Febrero 2026
 
 ## Introducción
 
@@ -79,19 +79,29 @@ jupyter notebook heart_disease_lr_analysis.ipynb
 
 Se realizó un análisis completo de distribuciones, correlaciones y outliers:
 
-![Distribución de Variables](Capturas/EDA/output1.png)
+<p align="center">
+  <img src="Capturas/EDA/output1.png" alt="Distribución de Variables">
+</p>
 *Figura 1: Distribución de la variable objetivo*
 
-![Detección de Outliers](Capturas/EDA/output2.png)
+<p align="center">
+  <img src="Capturas/EDA/output2.png" alt="Detección de Outliers">
+</p>
 *Figura 2: Boxplots para detección de valores atípicos*
 
-![Análisis de Correlaciones](Capturas/EDA/output3.png)
+<p align="center">
+  <img src="Capturas/EDA/output3.png" alt="Análisis de Correlaciones">
+</p>
 *Figura 3: Matriz de correlación entre variables*
 
-![Análisis de Correlaciones](Capturas/EDA/output4.png)
+<p align="center">
+  <img src="Capturas/EDA/output4.png" alt="Análisis de Correlaciones">
+</p>
 *Figura 4: Correlacion de caracteristicas*
 
-![Distribución de Caracteristicas](Capturas/EDA/output5.png)
+<p align="center">
+  <img src="Capturas/EDA/output5.png" alt="Distribución de Caracteristicas">
+</p>
 *Figura 5: Distribución de caracteristicas principales*
 
 
@@ -121,19 +131,29 @@ Se realizó un análisis completo de distribuciones, correlaciones y outliers:
 
 **Mejor regularización**: λ = 0.01 (balance óptimo train/test)
 
-![Métricas del Modelo](Capturas/Entrenamiento_Vizualización/image1.png)
+<p align="center">
+  <img src="Capturas/Entrenamiento_Vizualización/image1.png" alt="Métricas del Modelo">
+</p>
 *Figura 6: Métricas de evaluación del modelo (Accuracy, Precision, Recall, F1-Score)*
 
-![Gráfica de Costo vs Iteración](Capturas/Entrenamiento_Vizualización/image2.png)
+<p align="center">
+  <img src="Capturas/Entrenamiento_Vizualización/image2.png" alt="Gráfica de Costo vs Iteración">
+</p>
 *Figura 7: Evolución de la función de costo durante el entrenamiento con descenso de gradiente*
 
-![Modelo 2D: Age vs Cholesterol](Capturas/Entrenamiento_Vizualización/output1.png)
+<p align="center">
+  <img src="Capturas/Entrenamiento_Vizualización/output1.png" alt="Modelo 2D: Age vs Cholesterol">
+</p>
 *Figura 8: Decision boundary para modelo 2D - Age vs Cholesterol*
 
-![Modelo 2D: BP vs Max HR](Capturas/Entrenamiento_Vizualización/output2.png)
+<p align="center">
+  <img src="Capturas/Entrenamiento_Vizualización/output2.png" alt="Modelo 2D: BP vs Max HR">
+</p>
 *Figura 9: Decision boundary para modelo 2D - BP vs Max HR*
 
-![Modelo 2D: ST depression vs Vessels](Capturas/Entrenamiento_Vizualización/output3.png)
+<p align="center">
+  <img src="Capturas/Entrenamiento_Vizualización/output3.png" alt="Modelo 2D: ST depression vs Vessels">
+</p>
 *Figura 10: Decision boundary para modelo 2D - ST depression vs Number of vessels fluro*
 
 ---
@@ -142,13 +162,19 @@ Se realizó un análisis completo de distribuciones, correlaciones y outliers:
 
 Para prevenir el overfitting, se implementó regularización L2 y se probaron diferentes valores de lambda (λ):
 
-![Comparación de Regularización](Capturas/Regularización/image1.png)
+<p align="center">
+  <img src="Capturas/Regularización/image1.png" alt="Comparación de Regularización">
+</p>
 *Figura 11: Comparación de diferentes valores de λ en el desempeño del modelo*
 
-![Análisis de Regularización](Capturas/Regularización/output1.png)
+<p align="center">
+  <img src="Capturas/Regularización/output1.png" alt="Análisis de Regularización">
+</p>
 *Figura 12: Impacto de la regularización en la función de costo*
 
-![Optimización de Lambda](Capturas/Regularización/output2.png)
+<p align="center">
+  <img src="Capturas/Regularización/output2.png" alt="Optimización de Lambda">
+</p>
 *Figura 13: Selección del valor óptimo de λ para balance train/test*
 
 **Resultado**: El mejor valor de regularización fue **λ = 0.01**, logrando el equilibrio óptimo entre sesgo y varianza, evitando overfitting sin sacrificar accuracy.
@@ -167,19 +193,29 @@ Para prevenir el overfitting, se implementó regularización L2 y se probaron di
 
 #### Evidencia de Implementación:
 
-![Exportación del Modelo](Capturas/AWS_SageMaker/image1.png)
+<p align="center">
+  <img src="Capturas/AWS_SageMaker/image1.png" alt="Exportación del Modelo">
+</p>
 *Figura 14: Modelo exportado con pesos, bias y ejemplo de predicción local*
 
-![Creación de Inference Script](Capturas/AWS_SageMaker/image2.png)
+<p align="center">
+  <img src="Capturas/AWS_SageMaker/image2.png" alt="Creación de Inference Script">
+</p>
 *Figura 15: Creación de inference.py y empaquetado en model.tar.gz para SageMaker*
 
-![Bucket S3 Creado](Capturas/AWS_SageMaker/image3.png)
+<p align="center">
+  <img src="Capturas/AWS_SageMaker/image3.png" alt="Bucket S3 Creado">
+</p>
 *Figura 16: Modelo subido exitosamente al bucket S3*
 
-![Modelo Creado en SageMaker](Capturas/AWS_SageMaker/image5.png)
+<p align="center">
+  <img src="Capturas/AWS_SageMaker/image5.png" alt="Modelo Creado en SageMaker">
+</p>
 *Figura 17: Modelo registrado en SageMaker listo para deployment*
 
-![Error de Permisos](Capturas/AWS_SageMaker/image6.png)
+<p align="center">
+  <img src="Capturas/AWS_SageMaker/image6.png" alt="Error de Permisos">
+</p>
 *Figura 18: Error de permisos IAM al intentar crear endpoint (limitación del ambiente educativo)*
 
 ---
