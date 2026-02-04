@@ -49,6 +49,13 @@ ipython_config.py
 # Logs
 *.log
 
+# Modelo y scripts de deployment
+heart_disease_model.json
+inference.py
+model.tar.gz
+
+
+
 # Temporary files
 *.tmp
 *.temp
